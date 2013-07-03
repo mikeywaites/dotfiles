@@ -107,15 +107,15 @@ augroup END
 
 syntax on
 
+" Explicitly set encoding to utf-8
+set encoding=utf-8
+
 " This took a while to figure out. Neocomplcache + iTerm + the CursorShape
 " fix is causing the completion menu popup to flash the first result. Tested it
 " with AutoComplPop and the behavior doesn't exist, so it's isolated to
 " Neocomplcache... :( Dug into the source for both and saw that AutoComplPop is
 " setting lazyredraw to be on during automatic popup...
-" set lazyredraw
-
-" Solid line for vsplit separator
-set fcs=vert:│
+set lazyredraw
 
 " Turn on the mouse, since it doesn't play well with tmux anyway. This way I can
 " scroll in the terminal
@@ -220,8 +220,6 @@ set t_vb=
 " Always show the statusline
 set laststatus=2
 
-" Explicitly set encoding to utf-8
-set encoding=utf-8
 
 " Column width indicator
 " set colorcolumn=+1
