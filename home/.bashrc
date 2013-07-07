@@ -170,6 +170,3 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 
-source ~/.git-flow-completion.bash
-alias vim=/usr/local/Cellar/vim/7.3.822/bin/vim
-alias git=hub
